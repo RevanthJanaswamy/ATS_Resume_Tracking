@@ -1,0 +1,4 @@
+streamlit
+PyPDF2 #we can read all the text in the pdf using this 
+google.generativeai
+python-dotenv
