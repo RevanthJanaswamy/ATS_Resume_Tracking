@@ -41,11 +41,21 @@ I want the response in one single string having the structure
 {{"JD Match":"%","MissingKeywords:[]","Profile Summary":""}}
 """
 
+st.set_page_config(
+    page_title="ATS: Smart Resume Tracking",
+    page_icon=":clipboard:",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    #theme="dark"  # or "light"
+)
+
+
 ## streamlit app
 st.title("Smart ATS")
 st.text("Improve Your Resume ATS")
 jd=st.text_area("Paste the Job Description")
 uploaded_file=st.file_uploader("Upload Your Resume",type="pdf",help="Please uplaod the pdf")
+
 
 submit = st.button("Submit")
 
